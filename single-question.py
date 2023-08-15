@@ -32,6 +32,7 @@ def formulate_question(team_name, stats):
     answers = [
         stats['wins'],
         stats['pts'],
+        # stats['goalsAgainst'] ## This was originally the line from ChatGPT.
         float(stats['goalsAgainstPerGame']) * int(stats['gamesPlayed'])
     ]
     
